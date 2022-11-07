@@ -1,0 +1,3 @@
+C:/Users/USER/CLionProjects/longestCommonPref/cmake-build-debug/CMakeFiles/longestCommonPref.dir
+C:/Users/USER/CLionProjects/longestCommonPref/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/USER/CLionProjects/longestCommonPref/cmake-build-debug/CMakeFiles/rebuild_cache.dir
