@@ -1,0 +1,3 @@
+C:/Users/USER/CLionProjects/Ex4Nokia/cmake-build-debug/CMakeFiles/Ex4Nokia.dir
+C:/Users/USER/CLionProjects/Ex4Nokia/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/USER/CLionProjects/Ex4Nokia/cmake-build-debug/CMakeFiles/rebuild_cache.dir

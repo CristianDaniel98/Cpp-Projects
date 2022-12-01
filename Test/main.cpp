@@ -1,125 +1,48 @@
 #include <iostream>
-#include <list>
-#include <memory>
 #include <vector>
-#include <numeric>
 
 using namespace std;
-/*
 
-class Forme{
-private:
-    int inaltime;
-
-public:
-     Forme(){
-        cout<<"Const fara parametrii"<<endl;
+vector<string> solution(vector<string> &A, vector<string> &B) {
+    vector<string> ret_vector = A;
+    for(vector<string>::iterator itr = B.begin(); itr != B.end(); itr++){
+        ret_vector.push_back(*itr);
     }
 
-    Forme(int inaltime){
-        this->inaltime = inaltime;
-        cout<<this->inaltime<<endl;
-        cout<<"Const cu parametrii"<<endl;
+    for(vector<string>::iterator itr = ret_vector.begin(); itr != ret_vector.end(); itr++){
+       for(vector<string>::iterator itr1 = itr + 1; itr1 != ret_vector.end(); itr1 ++){
+           if(*itr == *itr1){
+               ret_vector.erase(itr1);
+           }
+       }
     }
 
+    bool flag = true;
+    string  tmp  ;
 
-    virtual int aria() = 0;
-    virtual int perimetru() = 0;
-    virtual bool estePatrat() = 0;
-    virtual int Test(int x, int y){
-        return x+y;
-    }
-
-   virtual ~Forme(){
-        cout<<"Destructor forme"<<endl;
-    }
-};
-
-class Dreptunghi: public Forme{
-private:
-    int lungime;
-    int latime;
-
-public:
-    Dreptunghi(int lungime = 0, int latime = 0, int inaltime=0):Forme(inaltime){
-        setLungime(lungime);
-        setLatime(latime);
-    }
-
-    void setLungime(int lungime){
-        if(lungime >=0){
-            this->lungime = lungime;
-        }else{
-            this->lungime = 0;
+    while (flag){
+        flag = false;
+        for(vector<string>::iterator itr = ret_vector.begin(); itr != ret_vector.end(); itr++){
+            if(*itr > *(itr+1)){
+                tmp = *itr;
+                *itr = *(itr+1);
+                *(itr+1) = tmp;
+                flag = true;
+            }
         }
     }
 
-    void setLatime(int latime){
-        if(latime >= 0){
-            this->latime = latime;
-        }else{
-            this->latime = 0;
-        }
-    }
+    return  ret_vector;
 
-    int getLungime(){
-        return lungime;
-    }
+}
 
-    int getLatime(){
-        return latime;
-    }
+int main(){
+    vector<string> names1 = {"Ana", "Maria", "Oana"};
+    vector<string> names2 = {"Oana", "Ioana", "Alina"};
+    vector<string> names3 = solution(names1, names2);
 
-    int aria(){
-        return getLungime()*getLatime();
-    }
-
-    int perimetru(){
-        return 2*(getLungime()+getLatime());
-    }
-
-    bool estePatrat(){
-        if(getLungime() == getLatime()){
-            return true;
-        }else{
-            return false;
-        }
-    }
-
-    int Test(int x, int y){
-        return x-y;
-    }
-
-    ~Dreptunghi(){
-        cout<<"Destructor dreptunghi"<<endl;
-    }
-
-};
-
-*/
-
-int main() {
-    vector<int> nums = {1,2,3};
-
-    int leftSum = 0;
-    int rightSum = accumulate(nums.begin(), nums.end(), 0);
-    int pivotIndex = 0;
-
-    for(vector<int>::iterator itr=nums.begin(); itr !=nums.end(); itr++){
-        rightSum -= *itr;
-
-        if(leftSum == rightSum){
-
-           break;
-        }
-        pivotIndex++;
-        leftSum += *itr;
-    }
-
-    if(0 <= pivotIndex && pivotIndex < nums.capacity()){
-        cout<<pivotIndex<<endl;
-    }else{
-        cout<<"-1"<<endl;
+    for(vector<string>::iterator itr = names3.begin(); itr != names3.end(); itr++){
+        cout<< *itr<<endl;
     }
 
 }

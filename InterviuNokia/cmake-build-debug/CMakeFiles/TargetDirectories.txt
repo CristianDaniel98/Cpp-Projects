@@ -1,0 +1,3 @@
+C:/Users/USER/CLionProjects/InterviuNokia/cmake-build-debug/CMakeFiles/InterviuNokia.dir
+C:/Users/USER/CLionProjects/InterviuNokia/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/USER/CLionProjects/InterviuNokia/cmake-build-debug/CMakeFiles/rebuild_cache.dir

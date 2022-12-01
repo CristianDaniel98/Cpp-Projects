@@ -1,0 +1,15 @@
+# ninja log v5
+5	820	6915229431044610	CMakeFiles/FactoryShape.dir/Hexagon.cpp.obj	5807aec5165b0607
+13	562	6915229428391694	CMakeFiles/FactoryShape.dir/Square.cpp.obj	93757842d0299d39
+7	759	6915215373760408	CMakeFiles/FactoryShape.dir/Shape.cpp.obj	d73189ed512f9ae4
+5	535	6915233277888632	CMakeFiles/FactoryShape.dir/main.cpp.obj	8c5990dc6dfd9bb0
+10	724	6915229430057253	CMakeFiles/FactoryShape.dir/Triangle.cpp.obj	9a1cdd8cd467be12
+1	160	6915240443562487	build.ninja	47efba7ebb92dc5f
+4	658	6915231872806467	CMakeFiles/FactoryShape.dir/ShapeFactory.cpp.obj	e5b680f37c1474a9
+536	681	6915233279324774	FactoryShape.exe	5a277dd3cfe2df2a
+4	487	6915232800898042	CMakeFiles/FactoryShape.dir/Pentagon.cpp.obj	df4a0a3889373241
+15	854	6915241177822799	CMakeFiles/FactoryShape.dir/Octogon.cpp.obj	4170b0c726f5fa13
+3	640	6915241374100998	CMakeFiles/FactoryShape.dir/Octogon.cpp.obj	4170b0c726f5fa13
+640	805	6915241375726549	FactoryShape.exe	8383cc3f7dddf255
+3	720	6915241748458493	CMakeFiles/FactoryShape.dir/ShapeFactory.cpp.obj	e5b680f37c1474a9
+720	880	6915241750024826	FactoryShape.exe	8383cc3f7dddf255
